@@ -4,7 +4,7 @@ const route = require('./routes/battle.routes');
 const createError = require('http-errors')
 const cors = require('cors');
 require('dotenv').config();
-require('../battle-backend/configuration/database.configuration');
+require('./configuration/database.configuration');
 app.use(cors())
 
 app.use('/battle', route);
